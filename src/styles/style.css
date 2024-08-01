@@ -1,0 +1,87 @@
+/* Fonte personalizada */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Dancing Script", sans-serif;
+}
+
+/* Estilo do Cabeçalho */
+.header {
+    background-color: #4b1611;
+}
+
+.header__title {
+    color: #F0F0F0;
+}
+.header__title:hover {
+    color: #968686;
+}
+
+.header__nav-list .nav-link {
+    color: #F0F0F0;
+}
+
+.header__nav-list .nav-link.active,
+.header__nav-list .nav-link:hover {
+    background-color: #333333;
+    color: #F0F0F0;
+}
+
+/* Estilo da Seção Sobre */
+.autor {
+    background-color: #F0F0F0;
+}
+
+.autor__image {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Estilo da Seção do Livro */
+.card {
+    background: #b1a38a;
+}
+
+.book {
+    background-color: #7d4242;
+    color: #F0F0F0;
+}
+
+.book__card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.book__card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.book__card-body .btn-outline-primary {
+    background-color: #4A90E2;
+    color: #F0F0F0;
+    border-color: #333333;
+}
+
+.book__card-body .btn-outline-primary:hover {
+    color: #F0F0F0;
+    background-color: #333333;
+    border-color: #333333;
+}
+
+/* Estilo da Seção de Contato */
+.contact {
+    background-color: #F0F0F0;
+    color: #333333;
+}
+
+/* Estilo do Rodapé */
+.footer {
+    background-color: #4b1611;
+    color: #F0F0F0;
+}
+
+.footer h5 {
+    margin-bottom: 15px;
+}

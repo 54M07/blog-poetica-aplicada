@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Poética Aplicada</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="/src/styles/style.css" />
+  </head>
+  <body>
+    <!-- Cabeçalho -->
+    <header class="navbar navbar-expand-lg sticky-top p-4 header">
+      <div class="container">
+        <h1 class="navbar-brand m-0 header__title">Poética Aplicada</h1>
+        <button
+          class="navbar-toggler"
+          data-bs-toggle="collapse"
+          data-bs-target="#header__nav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <nav
+          class="collapse navbar-collapse justify-content-end"
+          id="header__nav"
+        >
+          <ul class="nav nav-pills d-block d-md-flex header__nav-list">
+            <li class="nav-item fw-bold">
+              <a class="nav-link header__nav-link" href="#autor"
+                ><i class="bi bi-globe me-2"></i>Sobre o autor</a
+              >
+            </li>
+            <li class="nav-item fw-bold">
+              <a class="nav-link header__nav-link" href="#book"
+                ><i class="bi bi-book me-2"></i>Livros</a
+              >
+            </li>
+            <li class="nav-item fw-bold">
+              <a class="nav-link header__nav-link" href="#contact"
+                ><i class="bi bi-chat-left-text me-2"></i>Fale Comigo</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Seção Sobre o Autor -->
+    <section id="autor" class="author container mt-5">
+        <div class="row align-items-center">
+            <div class="col-md-6 text-center">
+                <img
+                    src="/src/ebooks/foto-perfil.png"
+                    alt="Imagem do Autor"
+                    class="img-fluid autor__image"
+                />
+            </div>
+            <div class="col-md-6">
+                <h2 class="section-title mt-4">Sobre o Autor</h2>
+                <p class="fs-5 mb-5">
+                    Poeta, escritor, historiador, nasceu na "Fazenda Palmital",
+                    propriedade de seus avós paternos, em Santana de Cataguases (MG), no
+                    dia 16 de junho de 1940, madrugada de um domingo chuvoso. 
+                    <br/>
+                    <br/>
+                    No dia seguinte foi registrado no Cartório de Registro Civil de Santana
+                    de Cataguases. Aos 17 dias do mês de agosto do mesmo ano foi batizado na
+                    Igreja Matriz Nossa Senhora Sant'Anna, sendo padrinhos: Wilson Alves
+                    Garcia e América Baesso, e oficiante o Pe. Antônio Santos Rodrigues.
+                    <br/>
+                    <br/>
+                    É Delegado de Polícia aposentado do Estado do Rio de Janeiro.
+                    Mestre em Direito pela Universidade Estácio de Sá. Formado em
+                    Ciências Jurídicas; Letras: Português / Espanhol; Pedagogia:
+                    Administração Escolar. Participa de atividades culturais.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção de Livros -->
+    <section id="book" class="book pt-5 pb-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 text-center">
+            <h2 class="section-title">Livro em Destaque</h2>
+            <p class="fs-5">
+              Explore minha obra mais recente e mergulhe no universo da poética
+              aplicada.
+            </p>
+          </div>
+        </div>
+        <div class="row mt-4 justify-content-center">
+          <div class="col-md-4">
+            <div class="card book__card">
+              <img
+                src="/src/ebooks/capa-poeticaaplicada.png"
+                alt="Livro em Destaque"
+                class="card-img-top book__card-img"
+                data-bs-toggle="modal"
+                data-bs-target="#bookModal"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Poética Aplicada</h5>
+                <p class="card-text">
+                  Uma breve descrição do livro, destacando temas e pontos de
+                  interesse.
+                </p>
+                <button
+                  class="btn btn-outline-primary"
+                  data-bs-toggle="modal"
+                  data-bs-target="#bookModal"
+                >
+                  Veja o livro
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Modal para o Livro -->
+    <div
+      class="modal fade"
+      id="bookModal"
+      tabindex="-1"
+      aria-labelledby="bookModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="bookModalLabel">Poética Aplicada</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Fechar"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <iframe
+              src="/src/ebooks/Poetica Aplicada.pdf"
+              width="100%"
+              height="600px"
+            ></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Seção Fale Conosco -->
+    <section id="contact" class="contact pt-5 pb-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 text-center">
+            <h2 class="section-title">Fale Comigo</h2>
+            <p class="fs-5">
+              Entre em contato para compartilhar suas ideias, dúvidas ou
+              simplesmente para dizer olá. Adoramos ouvir nossos leitores!
+            </p>
+          </div>
+        </div>
+        <div class="row mt-4">
+          <div class="col-md-6 offset-md-3">
+            <form>
+              <div class="mb-3">
+                <label for="name" class="form-label">Nome</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="name"
+                  required
+                />
+              </div>
+              <div class="mb-3">
+                <label for="email" class="form-label">E-mail</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="email"
+                  required
+                />
+              </div>
+              <div class="mb-3">
+                <label for="phone" class="form-label">Telefone</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="phone"
+                  required
+                />
+              </div>
+              <div class="mb-3">
+                <label for="message" class="form-label">Mensagem</label>
+                <textarea
+                  class="form-control"
+                  id="message"
+                  rows="4"
+                  required
+                ></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary">
+                Enviar Mensagem
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer class="footer pt-4 pb-2">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <h5>Sobre o blog</h5>
+            <p>
+              Dedicado a explorar a poética aplicada em diversas esferas da
+              vida, proporcionando inspiração e reflexão através das palavras.
+            </p>
+          </div>
+          <div class="col-md-3">
+            <h5>Links Rápidos</h5>
+            <ul class="list-unstyled">
+              <li><a href="#about" class="text-light">Sobre o autor</a></li>
+              <li><a href="#book" class="text-light">Livros</a></li>
+              <li><a href="#contact" class="text-light">Fale Comigo</a></li>
+            </ul>
+          </div>
+          <div class="col-md-3">
+            <h5>Contato</h5>
+            <address>
+              <p>
+                <i class="bi bi-geo-alt-fill me-2"></i>123 Rua da Poesia, Cidade
+                Literária
+              </p>
+              <p>
+                <i class="bi bi-envelope-fill me-2"></i
+                >contato@poeticaaplicada.com
+              </p>
+              <p><i class="bi bi-telephone-fill me-2"></i>(12) 3456-7890</p>
+            </address>
+          </div>
+        </div>
+        <div class="text-center py-3">
+          <p>&copy; 2024 Poética Aplicada. Todos os direitos reservados.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/src/scripts/index.js"></script>
+  </body>
+</html>
