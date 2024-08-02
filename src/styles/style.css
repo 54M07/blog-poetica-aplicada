@@ -1,105 +1,130 @@
 /* Fonte personalizada */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Dancing Script", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Dancing Script", sans-serif;
 }
 
 /* Estilo do Cabeçalho */
 .header {
-    background-color: #4b1611;
+  background-color: #4b1611;
 }
 
 .header__title {
-    color: #F0F0F0;
+  color: #F0F0F0;
 }
+
 .header__title:hover {
-    color: #968686;
+  color: #968686;
 }
 
 .header__nav-list .nav-link {
-    color: #F0F0F0;
+  color: #F0F0F0;
 }
 
 .header__nav-list .nav-link.active,
 .header__nav-list .nav-link:hover {
-    background-color: #333333;
-    color: #F0F0F0;
+  background-color: #333333;
+  color: #F0F0F0;
 }
 
 /* Estilo da Seção Sobre */
-.autor {
-    background-color: #F0F0F0;
+.author {
+  background-color: #F0F0F0;
 }
 
-.autor__image {
-    max-width: 100%;
-    height: auto;
+.author__image {
+  max-width: 100%;
+  height: auto;
+}
+
+.author__bio {
+  color: #333333;
 }
 
 /* Estilo da Seção do Livro */
-.card {
-    background: #b1a38a;
-}
-
 .book {
-    background-color: #7d4242;
-    color: #F0F0F0;
+  background-color: #7d4242;
+  color: #F0F0F0;
 }
 
 .book__card {
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    cursor: pointer;
+  background: #b1a38a;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
 }
 
 .book__card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
-.book__card-body .btn-outline-primary {
-    background-color: #4A90E2;
-    color: #F0F0F0;
-    border-color: #333333;
+.book__card-img {
+  max-width: 100%;
 }
 
-.book__card-body .btn-outline-primary:hover {
-    color: #F0F0F0;
-    background-color: #333333;
-    border-color: #333333;
+.book__card-body .book__card-btn {
+  background-color: #4A90E2;
+  color: #F0F0F0;
+  border-color: #333333;
+}
+
+.book__card-body .book__card-btn:hover {
+  color: #F0F0F0;
+  background-color: #333333;
+  border-color: #333333;
+}
+
+/* Estilo do Modal Responsivo */
+.modal-lg {
+  max-width: 90%; /* Ajuste o tamanho do modal */
 }
 
 /* Estilos para iframe responsivo */
 .responsive-iframe {
-    width: 100%;
-    height: 0;
-    padding-bottom: 56.25%; /* 16:9 aspect ratio */
-    position: relative;
-    overflow: hidden;
+  position: relative;
+  width: 100%;
+  padding-top: 56.25%; /* 16:9 aspect ratio */
+  height: 0;
+}
+
+.responsive-iframe iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+@media (max-width: 768px) {
+  .responsive-iframe {
+    padding-bottom: 75%; /* Ajuste para 4:3 aspect ratio em telas menores */
   }
-  
-  .responsive-iframe iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    border: 0;
-  }
+}
 
 /* Estilo da Seção de Contato */
 .contact {
-    background-color: #F0F0F0;
-    color: #333333;
+  background-color: #F0F0F0;
+  color: #333333;
 }
 
 /* Estilo do Rodapé */
 .footer {
-    background-color: #4b1611;
-    color: #F0F0F0;
+  background-color: #4b1611;
+  color: #F0F0F0;
 }
 
-.footer h5 {
-    margin-bottom: 15px;
+.footer__title {
+  margin-bottom: 15px;
+}
+
+.footer__links {
+  list-style: none;
+  padding: 0;
+}
+
+.footer__contact p {
+  margin: 0;
 }
